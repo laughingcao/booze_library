@@ -1,0 +1,21 @@
+<h1> Add bottles to your collection </h1>
+
+<form action='/bottles' method="POST">
+    <p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="<%= params[:name] %>" />
+    <p>
+    <label for="spirit">Spirit:</label>
+    <input type="text" name="spirit" id="spirit" />
+    <p>
+    <label for="abv">ABV%:</label>
+    <input type="number" name="abv" id="abv" />
+    <p>
+    <label for="origin">Origin:</label>
+    <input type="text" name="origin" id="origin" />
+    <p>
+    <label for="price">Price:</label>
+    <input type="number" name="price" id="price" />
+    <p>
+    <input type="submit" value="Add Bottle" />
+</form>
