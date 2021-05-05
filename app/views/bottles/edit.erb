@@ -1,0 +1,13 @@
+<h1> Edit your bottle collection: </h1>
+<form action="/bottles/<%= @bottle.id %>" method="POST">
+ <input type="hidden" name="_method" value="patch"/> 
+    <ul> 
+    <li>Name: <input type="text" name="name" value="<%= @bottle.name %>"/></li>
+    <li>Spirit: <input type="text" name="spirit" value="<%= @bottle.spirit %>"/></li>
+    <li>ABV%: <input type="number" name="abv" value="<%= @bottle.abv %>"/></li>
+    <li>Origin: <input type="text" name="origin" value="<%= @bottle.origin %>"/></li>
+    <li>Price: <input type="number" name="price" value="<%= @bottle.price %>"/></li>
+    </ul>
+    <input type="submit" value="submit"/>
+<form>
+
